@@ -1,9 +1,9 @@
 body {
     margin: 0;
     /* feel free to change/customize this gradient and font */
-    background: linear-gradient(135deg, #ffafbd 0%, #ffc3a0 100%);
+    background: linear-gradient(135deg, #9ca07d 0%, #50581c 100%);
     /* feel free to change/customize font */
-    font-family: 'Arial', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .flex-container {
@@ -42,6 +42,11 @@ body {
     padding: 30px;
 }
 
+.flex-tile1:hover{
+    border: 5px groove rgb(119, 63, 11);
+    box-shadow: 0 0 3px rgb(87, 40, 3);
+}
+
 .flex-tile2 {
     /* Make this into a flexbox using display: flex */
     /* Use flexbox properties to stack elements in your tiles vertically and center them */
@@ -68,6 +73,11 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 30px;
+}
+
+.flex-tile2:hover{
+    border: 5px groove rgb(119, 63, 11);
+    box-shadow: 0 0 3px rgb(87, 40, 3);
 }
 
 .flex-tile3 {
@@ -98,6 +108,11 @@ body {
     padding: 30px;
 }
 
+.flex-tile3:hover{
+    border: 5px groove rgb(119, 63, 11);
+    box-shadow: 0 0 3px rgb(87, 40, 3);
+}
+
 img{
     width: 50%;
 }
@@ -119,4 +134,18 @@ p{
 
 button{
     margin: 25px;
+    padding: 10px;
+    width: 120px;
+    border: 4px groove rgb(104, 67, 42);
+    cursor: pointer;
+    background-color: #d6dbb1;
+    color: #27260a;
+    font-size: 15px;
+}
+
+button:hover{
+    background-color: rgb(168, 191, 192);
+    color: white;
+    border: 4px groove gold;
+    font-size: 20px;
 }
