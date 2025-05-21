@@ -1,7 +1,7 @@
 body {
     margin: 0;
     /* feel free to change/customize this gradient and font */
-    background: linear-gradient(135deg, #9ca07d 0%, #50581c 100%);
+    background: linear-gradient(135deg, #9ca07d 0%, #586b3f 100%);
     /* feel free to change/customize font */
     font-family: 'Times New Roman', Times, serif;
 }
@@ -28,11 +28,13 @@ body {
     padding: 20px;
 
     /* background color for tile, feel free to change */
-    background-color: white;
+    background-color: #c7e0dd;
     text-align: center;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    animation: GalBG 8s infinite;
+    border: 5px groove rgb(190, 161, 81);
 }
 
 .flex-tile1 img{
@@ -61,11 +63,13 @@ body {
     padding: 20px;
 
     /* background color for tile, feel free to change */
-    background-color: white;
     text-align: center;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    background-color: #6e857a;
+    border: 5px groove rgb(190, 161, 81);
+    animation: ArwenBG 8s infinite;
 }
 
 .flex-tile2 img{
@@ -99,6 +103,9 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    border: 5px groove rgb(190, 161, 81);
+    background-color: #dbcdb7;
+    animation: EowynBG 8s infinite;
 }
 
 .flex-tile3 img{
@@ -122,6 +129,7 @@ h1{
     flex: 0 0 100%;
     justify-content: center;
     align-items: center;
+    color: #4b4039;
 }
 
 p{
@@ -130,22 +138,78 @@ p{
     justify-content: center;
     align-items: center;
     text-align: left;
+    font-weight: bold;
+}
+
+.music-button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #876d4e;
+    color: #f5dbbb;
+    width: 200px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 button{
     margin: 25px;
     padding: 10px;
-    width: 120px;
+    width: 170px;
     border: 4px groove rgb(104, 67, 42);
     cursor: pointer;
-    background-color: #d6dbb1;
+    background-color: #c5b8a7;
     color: #27260a;
     font-size: 15px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 15px;
 }
 
 button:hover{
     background-color: rgb(168, 191, 192);
     color: white;
     border: 4px groove gold;
+    font-family: Georgia;
+}
+
+button:active{
+    transform: rotate(10deg);
     font-size: 20px;
+}
+
+@keyframes GalBG{
+    0%{
+        background-color: #94aca9;
+    }
+    50%{
+        background-color: #eff0d5;
+    }
+    100%{
+        background-color: #94aca9;
+    }
+}
+
+@keyframes ArwenBG{
+    0%{
+        background-color: #6e857a;
+    }
+    50%{
+        background-color: #98999d;
+    }
+    100%{
+        background-color: #6e857a;
+    }
+}
+
+@keyframes EowynBG{
+    0%{
+        background-color: #dbcdb7;
+    }
+    50%{
+        background-color: #876d4e;
+    }
+    100%{
+        background-color: #dbcdb7;
+    }
 }
